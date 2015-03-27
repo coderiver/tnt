@@ -283,7 +283,15 @@ function initScrollWindow(){
 				}
 			}
 			else if(this.fakeHeader.hasClass(this.visibleStateClass)){
-				this.fakeHeader.removeClass(this.visibleStateClass);
+				this.fakeHeader.addClass('fademe');
+				if(!this.fakeHeader.hasClass('running')){
+					this.fakeHeader.addClass('running');
+					el = this;
+					setTimeout(function(){ 
+						el.fakeHeader.removeClass(el.visibleStateClass).removeClass('fademe running');
+					}, 150);
+				}
+				
 			};
 		}
 	}.init();

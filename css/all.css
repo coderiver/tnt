@@ -2569,3 +2569,7 @@ header .btn-next{
 	position: relative;
 	top: -60px;
 }
+.fademe{
+	opacity: 0;
+	-webkit-transition: all 150ms linear
+}
