@@ -1,0 +1,6 @@
+#header .contacts address a{color:#000;}
+#header .contacts.active address a{color:#fff;}
+.archive .list li:hover .info,
+.announcement .list > li:hover .info,
+#poster .slideset > li:hover .info{background:url(../images/bg-black-overlay.png);}
+.archive .gallery a:hover .overlay{background:url(../images/bg-yellow-overlay.png);}
