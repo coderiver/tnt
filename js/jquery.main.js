@@ -14,6 +14,7 @@ jQuery(function(){
 	setMapHeight();
 	addClass();
 	navOpen();
+	showmap();
 });
 
 function navOpen(){
@@ -50,6 +51,12 @@ function navOpen(){
 			nav.css('display', 'block');
 		};
 	})
+}
+
+function showmap(){
+	$('#map').click(function(event) {
+		$(this).addClass('is-active');
+	});
 }
 
 function openAnnouncement(){
@@ -373,7 +380,6 @@ function contactsMap(){
 		var myOptions = {
 			zoom: 16,
 			scrollwheel: false,
-			draggable: false,
 			center: latlng,
 			mapTypeControl: false,
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},

@@ -824,7 +824,28 @@ header .btn-next{
 }
 #info-section .col-2 h2 a{text-decoration:none;}
 #info-section .col-2 h2 a:hover{text-decoration:underline;}
-#map{height:413px;}
+#map{height:413px;position: relative;}
+#map:before{
+	content: ' ';
+	background: transparent;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 1000;
+	cursor: pointer;
+	display: none;
+}
+@media screen and (max-width: 769px) {
+    #map:before{
+    	display: block;
+    }
+}
+#map.is-active:before{
+	display: none;
+}
+
 .inner-page #map{
 	height:645px;
 	min-height:200px;
