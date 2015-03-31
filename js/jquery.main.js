@@ -6,7 +6,8 @@ jQuery(function(){
 	initVideo();
 	openContacts();
 	initFitVids();
-	customScrollInit();
+	//customScrollInit();
+	slickInit();
 	initCarousel();
 	initCrawlLine();
 	initFancybox();
@@ -141,13 +142,51 @@ function initCarousel() {
 	});
 }
 
-function customScrollInit(){
-	$("#poster .list > .box").mCustomScrollbar({
-		horizontalScroll:true,
-		updateOnContentResize: true,
-		updateOnBrowserResize: true,
-		mouseWheel:false
-	});
+// function customScrollInit(){
+// 	$("#poster .list > .box").mCustomScrollbar({
+// 		horizontalScroll:true,
+// 		updateOnContentResize: true,
+// 		updateOnBrowserResize: true,
+// 		mouseWheel:false
+// 	});
+// }
+
+// init slick slider
+function slickInit() {
+	if ($(".js-slider").length) {
+		$(".js-slider").slick({
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			dots: true,
+			arrows: false,
+			autoplay: true,
+  			autoplaySpeed: 5000,
+			responsive: [
+			    {
+			      breakpoint: 1200,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 640,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+			]
+		});
+	}
+	
 }
 
 // handle flexible video size

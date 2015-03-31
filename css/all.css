@@ -670,7 +670,7 @@ header .btn-next{
 }
 #poster .announcement{
 	float:left;
-	width:auto;
+	width:100%;
 }
 #poster .announcement .list{margin:0 -24px;}
 /* list styles end */
@@ -859,6 +859,7 @@ header .btn-next{
 	width:100%;
 	min-width:1000px;
 	overflow:hidden;
+	will-change: transform;
 }
 .scroll-holder img{
 	display:block;
@@ -897,6 +898,17 @@ header .btn-next{
 	color:#fff;
 	overflow:hidden;
 }
+.announcement .list__slider {
+	margin: 0;
+	max-width: 1200px;
+	overflow: hidden;
+}
+.announcement .list__slider .slick-slider {
+	/*margin-left: -30px;*/
+}
+.announcement .list .slick-slider {
+	width: 100%;
+}
 .announcement .list > li{
 	width:184px;
 	height:248px;
@@ -905,6 +917,22 @@ header .btn-next{
 	margin:0 26px 64px 30px;
 	vertical-align:top;
 	position:relative;
+}
+.announcement .list .list__item {
+	width:184px;
+	height:248px;
+	display:inline-block;
+	padding:0 0 32px;
+	margin: 0 30px 30px 30px;
+	vertical-align:top;
+	position:relative;
+}
+.announcement .list__slider .slick-slide.list__item {
+	margin:0 0 30px 30px;
+}
+.announcement .list .list__item .frame {
+	width:184px;
+	margin: 0 auto !important;
 }
 *+ html .announcement .list > li{
 	display:inline;
@@ -1752,28 +1780,34 @@ header .btn-next{
 	margin:-77px 0 0 -77px;
 	text-indent:-9999px;
 	overflow:hidden;
+	will-change: transform;
 }
 .footer-logo{
 	-webkit-animation-name:spin;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-duration:10s;
+	-webkit-animation-delay: .3s;
 	-moz-animation-name:spin;
 	-moz-animation-iteration-count:infinite;
 	-moz-animation-timing-function:linear;
 	-moz-animation-duration:10s;
+	-moz-animation-delay: .3s;
 	-ms-animation-name:spin;
 	-ms-animation-iteration-count:infinite;
 	-ms-animation-timing-function:linear;
 	-ms-animation-duration:10s;
+	-ms-animation-delay: .3s;
 	-o-animation-name:spin;
 	-o-animation-iteration-count:infinite;
 	-o-animation-timing-function:linear;
 	-o-animation-duration:10s;
+	-o-animation-delay: .3s;
 	animation-name:spin;
 	animation-iteration-count:infinite;
 	animation-timing-function:linear;
 	animation-duration:10s;
+	animation-delay: .3s;
 }
 @-webkit-keyframes spin{
 	from {-webkit-transform: rotate(0deg);}
