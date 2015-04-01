@@ -157,9 +157,7 @@ function slickInit() {
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			dots: true,
-			arrows: false,
-			autoplay: true,
-  			autoplaySpeed: 5000,
+			arrows: false
 			responsive: [
 			    {
 			      breakpoint: 1200,
