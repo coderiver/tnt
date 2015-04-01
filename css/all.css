@@ -701,6 +701,23 @@ header .btn-next{
 	-o-transition:all ease 0.5s;
 	transition:all ease 0.5s;
 }
+@media screen and (max-width: 767px) {
+    #poster .list .btn-next,
+	#poster .list .btn-back {
+		position: static;
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+	.btn-wrap {
+		position:absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index:5;
+		text-align: center;
+	}
+}
 #poster .list .btn-next{
 	left:auto;
 	right:20px;
