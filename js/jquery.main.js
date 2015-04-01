@@ -6,7 +6,7 @@ jQuery(function(){
 	initVideo();
 	openContacts();
 	initFitVids();
-	//customScrollInit();
+	customScrollInit();
 	slickInit();
 	initCarousel();
 	initCrawlLine();
@@ -142,14 +142,14 @@ function initCarousel() {
 	});
 }
 
-// function customScrollInit(){
-// 	$("#poster .list > .box").mCustomScrollbar({
-// 		horizontalScroll:true,
-// 		updateOnContentResize: true,
-// 		updateOnBrowserResize: true,
-// 		mouseWheel:false
-// 	});
-// }
+function customScrollInit(){
+	$(".js-custom-scroll").mCustomScrollbar({
+		horizontalScroll:true,
+		updateOnContentResize: true,
+		updateOnBrowserResize: true,
+		mouseWheel:false
+	});
+}
 
 // init slick slider
 function slickInit() {
