@@ -953,7 +953,7 @@ header .btn-next{
 	overflow:hidden;
 	text-indent:-9999px;
 }
-.announcement .list li.active .opener{background-position:-276px -614px;}
+.announcement .list .active .opener{background-position:-276px -614px;}
 .announcement .list .frame{
 	overflow:hidden;
 	position:relative;
@@ -1027,7 +1027,7 @@ header .btn-next{
 	text-transform:uppercase;
 }
 .announcement .list .frame:hover .info,
-.announcement .list li.active .frame .info{top:-100px;}
+.announcement .list .active .frame .info{top:-100px;}
 .touch-device .announcement .list .frame:hover .info{top:68px;}
 /* list styles end */
 /* item styles start */

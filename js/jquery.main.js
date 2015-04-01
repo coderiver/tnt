@@ -64,8 +64,8 @@ function openAnnouncement(){
 	if($('.announcement .list li').length){
 		var element = $('.announcement .list li'),
 			activeClass = 'active';
-		element.each(function(){
-			$(this).find('.opener').on('click', function(){
+		//element.each(function(){
+			$("body").on("click",".opener", function(){
 				var self = $(this),
 					parent = self.parent();
 				if(parent.hasClass(activeClass)){
@@ -76,10 +76,9 @@ function openAnnouncement(){
 				}
 				return false;
 			});
-		});
+		//});
 	}
 }
-
 function addClass(){
 	var html = $('html');
 	if(html.has('a.fancybox').length){
