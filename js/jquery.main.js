@@ -157,7 +157,7 @@ function slickInit() {
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			dots: true,
-			arrows: false
+			arrows: false,
 			responsive: [
 			    {
 			      breakpoint: 1200,
@@ -168,13 +168,6 @@ function slickInit() {
 			    },
 			    {
 			      breakpoint: 640,
-			      settings: {
-			        slidesToShow: 2,
-			        slidesToScroll: 1
-			      }
-			    },
-			    {
-			      breakpoint: 480,
 			      settings: {
 			        slidesToShow: 1,
 			        slidesToScroll: 1

@@ -675,7 +675,17 @@ header .btn-next{
 	float:left;
 	width:100%;
 }
-#poster .announcement .list{margin:0 -24px;}
+#poster .announcement .list_with-slider{
+	margin: 0 -24px;
+}
+@media screen and (max-width: 640px) {
+    #poster .announcement .list_with-slider{
+    	margin: 0;
+    }
+    .announcement .list__slider .slick-slide.list__item {
+    	margin-left: 0 !important;
+    }
+}
 /* list styles end */
 #poster .list .btn-next,
 #poster .list .btn-back{
